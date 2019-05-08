@@ -60,7 +60,18 @@ view层与控制层结合比较紧密，需要二者结合起来协同开发。v
 Service层是建立在DAO层之上的，建立了DAO层后才可以建立Service层，而Service层又是在Controller层之下的，因而Service层应该既调用DAO层的接口，又要提供接口给Controller层的类来进行调用，它刚好处于一个中间层的位置。每个模型都有一个Service接口，每个接口分别封装各自的业务处理方法。 
     
     
-    
+  
+  一、添加依赖 设置application.yml
+  二、创建controller方法
+  三、创建template后台页面
+  声明thymeleaf名称空间
+  使用thymeleaf语法
+  控制器中 放入key-valuede modelMap数据
+  返回逻辑视图名
+  运行&验证
+  
+  
+  
     
     
     
