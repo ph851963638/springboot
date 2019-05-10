@@ -1,0 +1,23 @@
+使用thymeleaf向前端传递数据
+会话容器 page/request/session /application 
+作用域   （生命周期）  从低到高
+page      当前页面或者当前控制器中传递
+request   springboot默认跳转方式，转发跳转   客户端跳转===   浏览器地址栏地址不变
+session   转向跳转   （客户端跳转）
+application  项目不重启 数据一直存在
+1.在后端控制器中  数据获取
+1.  在控制器的控制方法，在方法参数
+ModelMap map
+2.  在控制器的控制方法，在方法参数
+    Maps<String,Object> model
+3.  在控制器的控制方法，在方法参数
+ModelAndView
+4.在控制器的控制方法
+   返回值类型:ModelAndView 
+   方法参数为空
+   MOdelAndView mv=new ModelAndView();
+   向modelandview中放入数据&viewName
+   return mv;
+   
+   5.在控制器的控制方法，在方法参数
+   HttpServelt 
